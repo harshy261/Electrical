@@ -13,13 +13,14 @@ class userController {
                 message:message
             })
             //Saving Doc
+            // console.log(req.body);
             const result = await doc.save()
-            res.render('index')
+            // console.log(result);
+            res.redirect('/')
         } catch (error) {
             console.log(error);
         }
     }
-
 
 }
 

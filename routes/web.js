@@ -5,7 +5,7 @@ import {userController} from "../controllers/userController.js";
 
 
 router.get('/', homeController)
-router.post('/contact', userController)
+router.post('/', userController.createDoc)
 
 
 
